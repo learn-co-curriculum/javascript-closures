@@ -185,7 +185,7 @@ function raspyDoorGuy() {
   }
 
   function bribe(amount) {
-    if (willBreakPrinciples()) {
+    if (willBreakPrinciples(amount)) {
       return password;
     } else {
       console.log("Pssht. That won't work.");
