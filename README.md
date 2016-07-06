@@ -116,8 +116,14 @@ whatsForDinner(); // prints 'My belly is empty. Woe is me.'
 
 Another thing to watch out for is that closures are the most common source of performance issues and memory leaks. Since
 the variables that are closed over might still be in use, they're either never or barely picked up by the garbage
-collection. This, however, is something that you probably don't have to worry about, unless you're writing UI code
-that gets executed a lot (e.g. the people working on Angular, React, ... do keep an eye on performance).
+collection.
+
+**Note:** Garbage collection (GC) is basically something that happens in the background to automatically manage the
+memory used by our application. Stuff that's no longer being used by the program takes up unnecessary memory, and the GC
+is responsible for cleaning it up.
+
+Garbage collection is something that you generally don't have to worry about, unless you're writing UI code that gets
+executed a lot (e.g. the people working on Angular, React, ... do keep an eye on performance).
 
 
 ## Pirates and passwords
