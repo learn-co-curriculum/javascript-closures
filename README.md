@@ -41,7 +41,7 @@ function fatBastard(meal) {
     }
   }
 
-  return whatsForDinner;
+  return whatsForDinner();
 }
 ```
 
@@ -224,3 +224,5 @@ their implications.
 
 - [MDN - Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [Closures](http://dmitrysoshnikov.com/ecmascript/chapter-6-closures/#one-codescopecode-value-for-them-all)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-closures'>Closures</a> on Learn.co and start learning to code for free.</p>
